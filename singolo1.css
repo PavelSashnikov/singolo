@@ -27,7 +27,7 @@ header .container{
 }
 h1 {
   font-size: 26px;
-  letter-spacing: -1px;
+  letter-spacing: -1.1px;
 }
 h1::after {
   content: "*";
@@ -35,7 +35,7 @@ h1::after {
 
 }
 .header-nav {
-  margin-right: -3px;
+  margin-right: -6px;
   margin-top: 10px;
 }
 .header-nav ul {
@@ -65,31 +65,93 @@ h1::after {
 }
 .slider {
   background-color: #f06c64;
-  height: 595px;
+  height: 600px;
+  box-shadow: 0px 6px 0px #ea676b;
+  position: relative;
+  z-index: 8;
 }
 .slider .container {
   position: relative;
 }
-.slider .container::before {
-  content: url(./assets/img/prev.svg);
+.slider .arrow {
   position: absolute;
   top: 287px;
-  left: 21px;
+  cursor: pointer;
+  transition: all 0.5s;
 }
-.slider .container::after {
-  content: url(./assets/img/next.svg);
-  position: absolute;
-  top:287px;
-  right: 21px;
+.arrow.arrow-prev {
+  left: 22px;
+}
+.arrow.arrow-next {
+  right: 20px;
 }
 .slider img {
   position: absolute;
 }
 .slider .horizontal {
-  right: 91px;
+  right: 90px;
   top: 178px;
 }
 .slider .vertical {
-  left: 89px;
+  left: 90px;
   top: 57px;
+}
+.services {
+  background-color: #f2f2f2;
+  padding-bottom: 29px;
+  margin-bottom: 6px;
+}
+.services .container {
+  padding-top: 65px;
+}
+.services h2 {
+  font-size: 30px;
+  color: #666d89;
+}
+.services-description {
+  font-size: 18px;
+  font-family: LatoThin, sans-serif;
+  color: #767e9e;
+  line-height: 30px;
+  letter-spacing: 0.25px;
+  word-spacing: 0.6px;
+  margin-top: 18px;
+  margin-bottom: 46px;
+}
+.services-description span {
+  word-spacing: -0.15px;
+  font-family: LatoThin, sans-serif;
+}
+.services .flex {
+  max-width: 980px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.services-element {
+  display: flex;
+  align-items: flex-start;
+  max-width: 32%;
+  color: #666d89;
+  margin-bottom: 30px;
+}
+.services-element_text {
+  margin-left: 19px;
+  margin-top: -3px;
+  overflow: hidden;
+}
+.services-element_text h3 {
+  font-size: 18px;
+  letter-spacing: 0px;
+  margin-bottom: 8px;
+}
+.services-element_text p {
+  color: #767e9e;
+  font-family: LatoRegular,sans-serif;
+  font-size: 12px;
+  line-height: 22px;
+  text-align: justify;
+  max-height: 136px;
+  overflow: hidden;
 }
