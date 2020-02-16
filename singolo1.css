@@ -15,6 +15,8 @@ header {
   background-color: #2d303a;
   color: #fff;
   box-shadow: 0px 6px 0px #323746;
+  position: relative;
+  z-index: 9;
 }
 header .container{
   height: 89px;
@@ -60,4 +62,34 @@ h1::after {
 }
 .header-nav ul li:first-child span {
   color: #f06c64;
+}
+.slider {
+  background-color: #f06c64;
+  height: 595px;
+}
+.slider .container {
+  position: relative;
+}
+.slider .container::before {
+  content: url(./assets/img/prev.svg);
+  position: absolute;
+  top: 287px;
+  left: 21px;
+}
+.slider .container::after {
+  content: url(./assets/img/next.svg);
+  position: absolute;
+  top:287px;
+  right: 21px;
+}
+.slider img {
+  position: absolute;
+}
+.slider .horizontal {
+  right: 91px;
+  top: 178px;
+}
+.slider .vertical {
+  left: 89px;
+  top: 57px;
 }
