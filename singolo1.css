@@ -136,6 +136,10 @@ h1::after {
   color: #666d89;
   margin-bottom: 30px;
 }
+.services-element img {
+  width: 20%;
+  margin: 1px;
+}
 .services-element_text {
   margin-left: 19px;
   margin-top: -3px;
