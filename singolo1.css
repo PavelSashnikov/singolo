@@ -109,6 +109,8 @@ nav ul li a {
   font-family: LatoBold, sans-serif;
   word-spacing: 1px;
   letter-spacing: -0.5px;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .human-info p {
   font-size: 11px;
@@ -123,4 +125,7 @@ nav ul li a {
 }
 .human-contacts a {
   margin-right: 2px;
+}
+.human-contacts a:hover {
+  border-bottom: 1px solid #323746;
 }
