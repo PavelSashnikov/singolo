@@ -7,6 +7,7 @@
   color: #f0d8d9;
   box-sizing: border-box;
   outline: none;
+  text-decoration: none;
 }
 .flex {
   display: flex;
@@ -17,7 +18,7 @@
   margin: 0px auto;
 }
 main .container {
-  padding: 59px 20px 51px;
+  padding: 59px 20px 3px;
 }
 main {
   background-color: #f06c64;
@@ -33,7 +34,7 @@ main h2 {
 main .container>p {
   font-size: 18px;
   text-align: justify;
-  word-spacing: -1.5px;
+  word-spacing: -1.3px;
   margin: 18px 0px 44px;
   line-height: 1.9rem;
 }
@@ -41,7 +42,8 @@ form {
 flex-basis: 65.9%;
 }
 form input,
-form textarea {
+form textarea,
+button {
   font-size: 12px;
   color: #fff;
   display: block;
@@ -51,6 +53,16 @@ form textarea {
   margin-bottom: 16px;
   text-indent: 15px;
   background-color: #d6564f;
+}
+button {
+  text-transform: uppercase;
+  line-height: 2rem;
+  color: #f48c8f;
+  transition: color 0.4s;
+}
+button:hover {
+  color: #fff;
+  cursor: pointer;
 }
 form input {
   line-height: 2.38rem;
@@ -71,41 +83,53 @@ form textarea::placeholder {
 .contact-info h3 {
   font-size: 18px;
   word-spacing: 0.5px;
-  letter-spacing: 0.1px;
+  letter-spacing: 0.2px;
   margin-bottom: 8px;
 }
 .contact-info>p {
   font-size: 12px;
-  line-height: 1.37rem;
+  line-height: 1.374rem;
   letter-spacing: -0.1px;
   word-spacing: -1px;
   text-align: justify;
   margin-top: 7px;
 }
 .contact-info_contacts {
-  margin-top: 26px;
+  margin-top: 27px;
   font-size: 12px;
 }
 .contact-info_contacts img {
-  margin-right: 10px;
+  margin-right: 11px;
   vertical-align: middle;
+  margin-top: -2px;
 }
 .contact-info_contacts p {
   margin-bottom: 7px;
 }
 .contact-info_contacts p:first-child {
   margin-left: 2px;
+  margin-bottom: 6px;
 }
 .contact-info_contacts p:last-child {
   margin-left: -1px;
 }
+.contact-info_contacts p:nth-child(2) img {
+  margin-right: 9px;
+}
+.contact-info_contacts p:last-child img {
+  margin-right: 8px;
+  margin-top: 1px;
+}
 footer {
   font-size: 12px;
   background-color: #2d303a;
+  max-height: 82px;
 }
 footer span {
   color: #666d89;
-  line-height: 85px;
+  line-height: 88px;
+  text-indent: 2px;
+  letter-spacing: -0.15px;
 }
 footer .container {
   justify-content: space-between;
@@ -113,6 +137,7 @@ footer .container {
   align-items: center;
 }
 footer img {
-  margin-left: 3.1px;
-  margin-top: 5px;
+  margin-left: 4.5px;
+  margin-right: -1px;
+  margin-top: 2px;
 }
